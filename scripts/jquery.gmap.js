@@ -128,11 +128,11 @@
 			// Feel free to make lat/lng dynamic
 			var lat="11.2667127";
 			var lon = "77.40898170000003";
-			if (lat && lon) {
+			/*if (lat && lon) {
 				var myLocation = new google.maps.LatLng(lat, lon);
 				new google.maps.Marker({ map:map, position:myLocation, icon:"http://labs.google.com/ridefinder/images/mm_20_green.png" });
 				bounds.extend(myLocation);
-			}
+			}*/
 
 			$.each(data, function(i) {
 				var icon = "http://maps.google.com/mapfiles/marker.png";

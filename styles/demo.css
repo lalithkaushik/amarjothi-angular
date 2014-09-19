@@ -10,34 +10,6 @@
 		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
 
-body {
-	background: #444;
-	color: #48a770;
-	font-weight: 300;
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-}
-
-a {
-	text-decoration: none;
-	color: #48a770;
-	outline: none;
-}
-
-a:hover, a:focus {
-	color: #2c774b;
-	outline: none;
-}
-
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before,
-.clearfix:after {
-	display: table;
-	content: " ";
-}
-
-.clearfix:after {
-	clear: both;
-}
 
 .codrops-header,
 .codrops-top {

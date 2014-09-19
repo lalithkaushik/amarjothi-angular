@@ -68,6 +68,18 @@ body{
     
     margin-bottom: 20px;
     padding: 10px;
+
+}
+
+.indexheader{
+    
+	background: none repeat scroll 0 0 #F3EFE0;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+	top: 8px;
 }
 
 .header a{
@@ -449,4 +461,43 @@ button, input, select, textarea {
 }
 .swiper-active-switch {
   background: #fff;
+}
+
+
+video { 
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+ background: url('../images/process-02.jpg') no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+}
+a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background:rgba(0,0,0,0.5);
+  padding: .5rem;
+  transition: .6s background; 
+}
+a:hover{
+  background:rgba(0,0,0,0.9);
+}
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url(../images/process-02.jpg) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
 }
