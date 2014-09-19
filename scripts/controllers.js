@@ -7,7 +7,7 @@ function close_menu(){
 
 function onclickFunction(v) {
 	//v = value of data-onclick attribute (see below)			
-	$.colorbox({href:"logo/"+v+".png", opacity:0.5, scalePhotos:true, maxWidth:'90%', maxHeight:'90%', initialWidth:'50%'});		
+	//$.colorbox({href:"logo/"+v+".png", opacity:0.5, scalePhotos:true, maxWidth:'90%', maxHeight:'90%', initialWidth:'50%'});		
 }
 
 
@@ -73,7 +73,8 @@ function($scope) {
 				border_radius:	-1,				// -1 = circle, 0 and other = radius
 				automatic_height_resize: 1,
 				border_on_off: 0,
-				allow_shadow: 0
+				allow_shadow: 0,
+				hide_prettyPhoto: 1
 			});
 	
 }]);
@@ -134,7 +135,33 @@ function($scope) {
 
 phonecatControllers.controller('CertificationCtrl', ['$scope',
 function($scope) {
-	close_menu()
+	close_menu();
+	
+			var image_array = new Array();
+			image_array = [
+				{image: 'images/certificate_1.png', link_url: 'images/certificate_1.png', link_rel: 'prettyPhoto'},
+				{image: 'images/certificate_2.png', link_url: 'images/certificate_2.png', link_rel: 'prettyPhoto'},
+				{image: 'images/certificate_3.png', link_url: 'images/certificate_3.png', link_rel: 'prettyPhoto'},
+				{image: 'images/certificate_4.png', link_url: 'images/certificate_4.png', link_rel: 'prettyPhoto'},
+				{image: 'images/certificate_5.png', link_url: 'images/certificate_5.png', link_rel: 'prettyPhoto'},
+				{image: 'images/certificate_6.png', link_url: 'images/certificate_6.png', link_rel: 'prettyPhoto'}
+			];
+			$('#slider2').content_slider({		// bind plugin to div id="slider1"
+				map : image_array,				// pointer to the image map
+				max_shown_items: 5,				// number of visible circles
+				hv_switch: 0,					// 0 = horizontal slider, 1 = vertical
+				active_item: 0,					// layer that will be shown at start, 0=first, 1=second...
+				wrapper_text_max_height: 450,	// height of widget, displayed in pixels
+				middle_click: 1,				// when main circle is clicked: 1 = slider will go to the previous layer/circle, 2 = to the next
+				under_600_max_height: 1200,		// if resolution is below 600 px, set max height of content
+				border_radius:	-1,				// -1 = circle, 0 and other = radius
+				automatic_height_resize: 1,
+				border_on_off: 0,
+				text_field_id_prefix:'csw',
+				allow_shadow: 0,
+				hide_prettyPhoto: 1
+			});
+	
 }]);
 
 phonecatControllers.controller('VideoCtrl', ['$scope',
