@@ -129,9 +129,6 @@ button {
 	border-radius: 2px;
 }
 
-button:hover {
-	background: #2c774b;
-}
 
 .info {
 	text-align: center;

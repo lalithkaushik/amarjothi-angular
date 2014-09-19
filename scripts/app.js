@@ -27,6 +27,10 @@ phonecatApp.config(['$routeProvider',
         templateUrl: 'process.html',
         controller: 'ProcessCtrl'
       }).
+	  when('/video', {
+        templateUrl: 'video.html',
+        controller: 'VideoCtrl'
+      }).
 	  when('/certification', {
         templateUrl: 'certification.html',
         controller: 'CertificationCtrl'
