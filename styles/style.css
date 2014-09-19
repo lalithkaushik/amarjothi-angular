@@ -368,7 +368,7 @@ a.tapped {
     color: transparent;
     font-size: 1.5em;
     height: 2.25em;
-    margin: 1em;
+    margin: 0em;
     padding: 0;
     position: fixed;
     text-indent: 2.5em;
@@ -392,4 +392,61 @@ button, input, select, textarea {
 }
 *, *:after, *:before {
     box-sizing: border-box;
+}
+
+
+		#mycloud {width:100%;margin: 0 auto;}	
+		#mycloud div, img, p{cursor: pointer;}
+		#mycloud img{padding:3px;background-color:#fff;	border:1px solid #777;}				
+		#mycloud img:hover{border:2px solid #222;margin:-1px;}
+
+	.segmented-control { text-align:center; }
+	.segmented-control .ui-controlgroup { display:inline; margin:.2em 0px; }
+
+	#map-page { width:100%; height:100%; }
+	#map-canvas { width:100%; height:700px; margin-top:-30px; padding:0px!important; }
+	#gmap-marker-link { color:#00a0df; text-decoration:none; }
+
+	.ui-gmap-canvas { width:100%; height:100%; }
+	.ui-gmap-infobox { display:none; }
+
+	#show-more .ui-li-heading { text-align:center; }
+	#show-more .ui-icon { visibility:hidden; }
+
+	.ui-li-has-count .ui-li-count { border-color:transparent; }
+	.wrap { white-space:normal; }
+	
+
+
+.swiper-container {
+  height: 400px;
+  width: 100%;
+}
+.content-slide {
+  padding: 20px;
+  color: #fff;
+}
+.title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom:5px;
+  width: 100%;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #999;
+  box-shadow: 0px 1px 2px #555 inset;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #fff;
 }

@@ -19,6 +19,18 @@ phonecatApp.config(['$routeProvider',
         templateUrl: 'about.html',
         controller: 'AboutCtrl'
       }).
+	  when('/client', {
+        templateUrl: 'clients.html',
+        controller: 'ClientCtrl'
+      }).
+	  when('/process', {
+        templateUrl: 'process.html',
+        controller: 'ProcessCtrl'
+      }).
+	  when('/certification', {
+        templateUrl: 'certification.html',
+        controller: 'CertificationCtrl'
+      }).
 	  when('/contact', {
         templateUrl: 'contact.html',
         controller: 'ContactCtrl'
