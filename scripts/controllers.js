@@ -137,6 +137,10 @@ function($scope) {
 	close_menu()
 }]);
 
+phonecatControllers.controller('VideoCtrl', ['$scope',
+function($scope) {
+	close_menu()
+}]);
 
 phonecatControllers.controller('ContactCtrl', ['$scope',
 function($scope) {
