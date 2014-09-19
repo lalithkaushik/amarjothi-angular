@@ -1,0 +1,395 @@
+@font-face {
+	font-family: "robotobold";
+    src: url("../fonts/Roboto-BoldCondensed.ttf") format("opentype"); 
+}
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Light.ttf") format("opentype"); 
+}
+
+*{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body{
+	padding:0px;
+	margin:0px;
+	background: url(../images/body-bg.png) repeat;
+	font-family: roboto;
+}
+.bold_font{
+	font-family: "robotobold";
+}
+
+/*///////////////////////////////////////*/
+/*--------------Data Preloader-----------*/
+/*///////////////////////////////////////*/
+
+#preloader {
+	position:fixed;
+	z-index:2500;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff; 
+	z-index:999999; 
+}
+
+#status {
+	position:fixed;
+	z-index:999999;
+	width:250px;
+	height:250px;
+	position:absolute;
+	left:50%; 
+	top:50%; 
+	background-size:80px 12px;
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-125px 0 0 -125px; 
+}
+
+#status p{
+	top:60%;
+}
+
+#status em{
+	font-size:80% !important;
+	display:block;
+	font-style:normal;
+}
+
+
+.content {
+	padding:15px;
+}
+
+.header{
+    
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.header a{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.logo{
+    color: #CD1F26;
+    font-family: robotobold;
+    font-size: 250%;
+    letter-spacing: 3px;
+    text-shadow: 0 1px 1px #989898;
+}
+
+
+.button{
+	background:#CD1F26;
+	padding:10px;
+	text-decoration:none;
+	color:#FFF;
+	font-size:100%;
+}
+
+.login_box{
+	background:#FFF;
+	width:100%;
+	border-radius:10px;
+	background:#FFF;
+	border:1px solid #CCCCCC;
+	margin-bottom:10px;
+}
+
+.login_box input{
+	display:block;
+	width:100%;
+	background:none;
+	border:0px;
+	padding:20px;
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.login_box input[type="password"]{
+	border-top:1px solid #CCCCCC;
+}
+
+.login_button{
+	text-decoration:none;
+	color:#FFFFFF;
+	font-size:100%;
+	font-weight:bold;
+}
+
+.login_button div{
+	text-align:center;
+	width:100%;
+	padding:15px 0px;
+	background:#CD1F26;
+}
+
+#force_sync_btn div{
+	background: #3D3E42 !important;
+}
+
+
+.disabled{
+	background: #3D3E42 !important;
+}
+
+.clear{
+	clear:both;
+}
+
+.subtitle{
+	margin:0px;
+	padding:0px;
+	font-size:150%;
+}
+
+/***************************************** about ***********************************/
+
+
+.box_holder{
+	background:#FFF;
+	margin-bottom:20px;
+}
+
+.box_header{
+	padding:15px;
+	
+}
+
+.box_content{
+	padding:15px;
+	font-size:100%;
+}
+
+.box_content p span{
+	font-size:90%;
+	color: #666;
+}
+
+.box_content p{
+	margin:0px 0px 20px 0px;
+}
+
+.box_content .everyline{
+	margin:0px 0px 15px 0px;
+	clear:left;
+}
+
+.box_content .everyline_contact{
+	margin:0px 0px 20px 0px;
+	clear:left;
+	height:25px;
+}
+
+.box_header a{
+	text-decoration:none;
+}
+
+
+.photo_holder{
+	width:70px;
+	padding:10px;
+	float:left;
+}
+
+.photo_holder img{
+	border:1px solid #CCCCCC;
+}
+
+.profile_holder{
+	float:left;
+	font-size:80%;
+}
+
+.profile_holder p{
+	margin:10px 0px 0px 0px;
+}
+
+
+.float_left{
+float:left	
+}
+
+.float_right{
+	float:right;
+}
+
+.important_title{
+font-size:150%;
+font-weight:lighter;
+color:#3D3E42;
+font-family:roboto;
+}
+
+
+.smaller_title{
+line-height:200%;	
+}
+
+.subtext{
+	display:block;
+}
+
+.profile_name{
+font-size:200%;
+font-weight:lighter;
+color:#3D3E42;
+font-family:roboto;	
+text-transform:uppercase;
+}
+
+
+.home_icon{
+	width:50px;
+	height:50px;
+	background-image:url(../images/icons/home.png);
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	float:right;
+}
+
+
+.back_icon{
+	width:50px;
+	height:50px;
+	background-image:url(../images/icons/back.png);
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	float:left;
+}
+
+.theme_button_half{
+color:#FFF;
+background:#CD1F26;
+padding:10px 0px;
+font-size:120%;
+width:48%;
+text-decoration:none;
+
+text-align:center;
+
+}
+
+.theme_button_phone{
+color:#FFF;
+background:#CD1F26;
+padding:7px 5px;
+font-size:90%;
+text-decoration:none;
+text-align:center;
+margin-left:10px;
+}
+
+.theme_button_small{
+color:#FFF;
+background:#CD1F26;
+padding:10px;
+font-size:120%;
+text-decoration:none;
+margin-right:20px;
+text-align:center;
+
+}
+
+/****INTTERVENTION PLAN **************/
+
+
+.even{
+	background-color:#f2f2f2;
+	padding:10px 5px;
+	margin:0px !important;
+}
+
+.odd{
+	padding:10px 5px;margin:0px !important;
+}
+
+.each_target{
+	 
+	margin-bottom:15px;
+	border-bottom:1px solid #CCC;
+	
+}
+
+a.tapped {
+    background: rgba(205,31,38,0.6);
+}
+
+
+/************************ CIRCLE *****************************/
+
+.circle{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	margin:0px auto 20px auto;
+}
+
+.green{
+	background:#008000;
+}
+
+.orange{
+	background:#FE5E00;
+}
+
+.red{
+	background:#FF0000;
+}
+
+.circle.inactive{
+	border:1px solid #CCCCCC;
+	background:#FFFFFF !important;
+}
+
+
+
+.menu-button:before {
+    background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0.5em;
+    content: "";
+    left: 0.5em;
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+.menu-button {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: transparent;
+    font-size: 1.5em;
+    height: 2.25em;
+    margin: 1em;
+    padding: 0;
+    position: fixed;
+    text-indent: 2.5em;
+    transition: transform 0.3s ease 0s;
+    width: 2.5em;
+    z-index: 1000;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    line-height: normal;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
