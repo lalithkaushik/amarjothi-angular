@@ -12,8 +12,12 @@ phonecatApp.config(['$routeProvider',
         controller: 'IndexCtrl'
       }).
 	  when('/index', {
-        templateUrl: 'home.html',
-        controller: 'IndexCtrl'
+        templateUrl: 'main.html',
+        controller: 'MainCtrl'
+      }).
+	  when('/main', {
+        templateUrl: 'main.html',
+        controller: 'MainCtrl'
       }).
 	  when('/about', {
         templateUrl: 'about.html',
@@ -26,6 +30,10 @@ phonecatApp.config(['$routeProvider',
 	  when('/process', {
         templateUrl: 'process.html',
         controller: 'ProcessCtrl'
+      }).
+	  when('/dyeing', {
+        templateUrl: 'dyeing.html',
+        controller: 'DyeingCtrl'
       }).
 	  when('/video', {
         templateUrl: 'video.html',

@@ -34,7 +34,29 @@ function swipe(){
       
 
 }
+function swipe_dyeing(){
 
+  var container = $("#swipe-container-dyeing");
+
+      container.dragend({
+        minTouchDistance  : "60",
+        keyboardNavigation: true,
+        pageClass         : "page"
+      });
+
+
+      $("button.nextbtn").on("click", function() {
+        container.dragend("left");
+      });
+
+      $("button.previousbtn").on("click", function() {
+        container.dragend("right");
+      });
+		
+	  container.css("opacity", 1)	
+      
+
+}
 Storage.prototype.setArray = function(key, obj) {
     return this.setItem(key, JSON.stringify(obj))
 }
@@ -46,12 +68,39 @@ phonecatControllers.controller('IndexCtrl', ['$scope',
 function($scope) {
 	
 	close_menu();
+	$('#header_logo').hide();
 	
+	 $( "#slider" ).slider({
+		value:1,
+		min: 1,
+		max: 3,
+		step: 1,
+		slide: function( event, ui ) {
+			console.log(ui.value);
+			rotate_image(ui.value);
+		}
+	});
+	
+}]);
+
+phonecatControllers.controller('MainCtrl', ['$scope',
+function($scope) {
+	close_menu();
+	$('#header_logo').show();
+	
+}]);
+
+phonecatControllers.controller('DyeingCtrl', ['$scope',
+function($scope) {
+	$('#header_logo').show();
+	close_menu();
+	swipe_dyeing();
 	
 }]);
 		
 phonecatControllers.controller('AboutCtrl', ['$scope',
 function($scope) {
+	$('#header_logo').show();
 	close_menu();
 	
 			var image_array = new Array();
@@ -83,6 +132,7 @@ function($scope) {
 
 phonecatControllers.controller('ClientCtrl', ['$scope',
 function($scope) {
+	$('#header_logo').show();
 	close_menu();
 	
 	//dinamically add 50 images
@@ -126,6 +176,7 @@ function($scope) {
 
 phonecatControllers.controller('ProcessCtrl', ['$scope',
 function($scope) {
+	$('#header_logo').show();
 	close_menu();
 	
 	 swipe();
@@ -166,11 +217,13 @@ function($scope) {
 
 phonecatControllers.controller('VideoCtrl', ['$scope',
 function($scope) {
+	$('#header_logo').show();
 	close_menu()
 }]);
 
 phonecatControllers.controller('ContactCtrl', ['$scope',
 function($scope) {
+	$('#header_logo').show();
 	close_menu();
 	
 		var $mapSwitch = $( "#map-switch" ),

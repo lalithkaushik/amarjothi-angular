@@ -498,3 +498,37 @@ video {
 .marker_header{
 	margin:0px 0px 5px 0px;	
 }
+
+.main_button{
+	color:#FFFFFF;
+	text-decoration:none;
+	font-size:18px;	
+}
+
+.main_button div{
+	width:300px;
+	padding:7px 0px;
+	background:#3D8D61;
+	text-align:center;
+	margin:0px auto;	
+}
+
+
+#slogan{
+	font-size:20px;
+	margin:0px;
+	margin-top:5px;
+	font-weight:bold;	
+}
+
+.color_1{
+	color:#3D8D61;	
+}
+
+.color_2{
+	color:#C58930;	
+}
+
+.color_3{
+	color:#F58220;	
+}
