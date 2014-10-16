@@ -532,3 +532,24 @@ video {
 .color_3{
 	color:#F58220;	
 }
+
+
+
+.process_button{
+	color:#FFFFFF;
+	text-decoration:none;
+	font-size:18px;
+	margin-right:10px;
+}
+
+.process_button div{
+	width:auto;
+	padding:7px 5px;
+	background:#F58220;
+	text-align:center;
+	display:inline-block;
+}
+
+.process_button.active div{
+	background:#3D8D61;
+}
