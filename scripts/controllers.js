@@ -47,6 +47,7 @@ function swipe_dyeing(){
 
       $("button.nextbtn").on("click", function() {
         container.dragend("left");
+		alert('hi');
       });
 
       $("button.previousbtn").on("click", function() {
